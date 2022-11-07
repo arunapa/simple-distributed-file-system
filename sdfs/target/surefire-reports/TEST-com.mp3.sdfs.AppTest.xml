@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mp3.sdfs.AppTest" time="0.014" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mp3.sdfs.AppTest" time="0.012" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/aruna/ws/distributed-file-system-dev/sdfs/target/surefire/surefirebooter11227230773687275379.jar /Users/aruna/ws/distributed-file-system-dev/sdfs/target/surefire 2022-11-06T20-43-21_637-jvmRun1 surefire18440965870543893245tmp surefire_012066582317894336751tmp"/>
+    <property name="sun.java.command" value="/Users/aruna/ws/distributed-file-system-dev/sdfs/target/surefire/surefirebooter4459172684020625725.jar /Users/aruna/ws/distributed-file-system-dev/sdfs/target/surefire 2022-11-06T22-13-30_237-jvmRun1 surefire1627198328251974220tmp surefire_04997877462700526457tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/aruna/ws/distributed-file-system-dev/sdfs/target/test-classes:/Users/aruna/ws/distributed-file-system-dev/sdfs/target/classes:/Users/aruna/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/Users/aruna/.m2/repository/org/apache/logging/log4j/log4j-core/2.18.0/log4j-core-2.18.0.jar:/Users/aruna/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/aruna/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/aruna/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/aruna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/aruna/ws/distributed-file-system-dev/sdfs/target/surefire/surefirebooter11227230773687275379.jar"/>
+    <property name="surefire.real.class.path" value="/Users/aruna/ws/distributed-file-system-dev/sdfs/target/surefire/surefirebooter4459172684020625725.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.2.1+0"/>
     <property name="user.name" value="aruna"/>
@@ -53,5 +53,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.mp3.sdfs.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.mp3.sdfs.AppTest" time="0.001"/>
 </testsuite>

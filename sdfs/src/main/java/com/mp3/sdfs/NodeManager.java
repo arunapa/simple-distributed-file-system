@@ -351,7 +351,6 @@ public class NodeManager extends Thread {
                         
                         // Else increment the existing file version and reuse the same replicas that are used by previous version of file
                         } else {
-                            System.out.println("checkpoint 2354");
                             // Update the file version in info list and fetch replica nodes from there directly
                             int highestVersion = 0;
                             for (SdfsFile file: sdfsFileList) {
@@ -373,21 +372,17 @@ public class NodeManager extends Thread {
                             // Contact each host mapped to the file
                             for (String host: listOfTargetHosts) {
                                 // Immediately receive at self if condition true
-                                System.out.println("checkpoint 214 " + host);
                                 if (host.equals(id)) {
                                     if (senderIpAddress.equals(address)) {
                                         acksReceived++;
-                                        System.out.println("checkpoint 352 " + host);
                                         // No need to do anything else 
                                     
                                     } else {
-                                        System.out.println("checkpoint i7i " + host);
                                         receiveFile(sdfsFileName);
                                         acksReceived++;
                                     }
                                     
                                 }  else {
-                                    System.out.println("checkpoint 214352 " + host);
                                     String targetIpAddress = host.split(":")[0];
                                     String fileName = sdfsFileName + "_" + version;
                 
@@ -654,6 +649,7 @@ public class NodeManager extends Thread {
                     }
 
                 } else if (data.startsWith("get-versions ")) {
+
 
                 } else if (data.startsWith("get-versions-req ")) {
                     String sdfsFileName = data.split(" ")[1];
@@ -970,8 +966,6 @@ public class NodeManager extends Thread {
         while ((bytes=fileInputStream.read(buffer)) != -1){
             dos.write(buffer, 0, bytes);
             dos.flush();
-            System.out.println("Sending");
-
         }
 
         fileInputStream.close();
@@ -989,7 +983,6 @@ public class NodeManager extends Thread {
         while (size > 0 && (bytes = dis.read(buffer, 0, (int) Math.min(buffer.length, size))) != -1) {
             fileOutputStream.write(buffer, 0,bytes);
             size -= bytes;
-            System.out.println("Receiving");
         }
 
         fileOutputStream.close();

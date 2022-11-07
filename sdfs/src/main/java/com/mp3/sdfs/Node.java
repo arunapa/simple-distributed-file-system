@@ -86,11 +86,16 @@ public class Node {
 
                 }  else if (command.startsWith("put") || command.startsWith("get") || command.startsWith("delete") || command.startsWith("ls") || command.startsWith("store") || command.startsWith("get_version")) {
                     if (nodeMgrThread != null) {
-                        System.out.println("[TIME] " + System.currentTimeMillis());
-                        Socket clientSocket = new Socket(ipAddress, 4000);
-                        DataOutputStream dos = new DataOutputStream(clientSocket.getOutputStream());
-                        dos.writeUTF(command + " " + ipAddress);
-                        clientSocket.close();
+
+                        int i = 1;
+                        while (i != 0) {
+                            System.out.println("[TIME] " + System.currentTimeMillis());
+                            Socket clientSocket = new Socket(ipAddress, 4000);
+                            DataOutputStream dos = new DataOutputStream(clientSocket.getOutputStream());
+                            dos.writeUTF(command + " " + ipAddress);
+                            clientSocket.close();
+                            i--;
+                        }
                     }
 
                 }  else {
