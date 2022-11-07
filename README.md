@@ -6,6 +6,8 @@ The simple distributed file system (SDFS) is designed on top of our distributed 
 
 The SDFS is designed to have a leader (or coordinator) and multiple non-leader nodes (referred to as regular nodes). The leader node also works as a regular node. The regular nodes all contain a full membership list and know who the leader node is at all times when the system is healthy. Any file system query (get, put, etc) will go through the leader node to the regular nodes that contain the corresponding file being operated on. This node to data (file) mapping is present in the leader node. Basically it contains metadata about the files and decides location of new writes (which nodes to write to).
 
+![arch](imgs/mp3_diagram_1.png)
+
 ## Folder Structure
 
 ```
